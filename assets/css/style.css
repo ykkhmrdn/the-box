@@ -483,3 +483,117 @@ body {
 }
 
 /* End About */
+
+/* Banner */
+
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/Banner-Image.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+}
+
+.banner-content h1 {
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.banner-content p {
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.banner-content p span {
+    text-decoration: underline;
+}
+
+.banner-btn button {
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 20px;
+    border: 3px solid white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.banner-btn button:hover {
+    background: white;
+    color: var(--primary-color);
+    scale: 1.03;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .banner {
+        padding: 100px 0;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .banner-content {
+        gap: 20px;
+        align-items: center;
+    }
+
+    .banner-content h1 {
+        font-size: 30px;
+    }
+
+    .banner-content p {
+        font-size: 20px;
+    }
+
+    .banner-btn button {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .banner {
+        padding: 80px 0;
+        gap: 50px;
+    }
+
+    .banner-content {
+        gap: 20px;
+        align-items: center;   
+    }
+
+    .banner-content h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .banner-content p {
+        font-size: 20px;
+    }
+
+    .banner-btn button {
+        font-size: 14px;
+    }
+}
+
+/* End Banner */
