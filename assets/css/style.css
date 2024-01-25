@@ -597,3 +597,125 @@ body {
 }
 
 /* End Banner */
+
+/* Services */
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    background-color: #E0E3EB;
+    gap: 50px; 
+}
+
+.services-title {
+    color: #292E3D;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.services-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    margin: 50px 0;
+}
+
+.services-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    gap: 10px;
+    padding: 38px 20px;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+
+}
+
+.divider {
+    width: 30%;
+    border: 0;
+    border-top: 3px solid #E0E3EB;
+    margin: 20px 0;
+}
+
+.primary-bg {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.services-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+@media screen and (max-width: 1024px) {
+
+    .services {
+        padding: 40px 20px;
+    }
+
+    .services-title {
+        font-size: 30px;
+    }
+
+    .services-content {
+        gap: 30px;
+    }
+
+    .services-card {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .services {
+        padding: 50px 20px;
+        gap: 30px;
+    }
+
+    .services-title {
+        font-size: 24px;
+    }
+
+    .services-content {
+        gap: 30px;
+    }
+
+    .services-card {
+        width: 100%;
+    }
+
+    .services-card-title {
+        font-size: 18px;
+    }
+
+    .services-card-text {
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* End Services */
